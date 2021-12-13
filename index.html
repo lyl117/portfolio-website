@@ -14,18 +14,19 @@
     crossorigin="anonymous">
   </script>
   <script src = "main.js" defer></script>
+  <script src = "typing.js" defer></script>
 </head>
-<body>
+<body> 
   <nav class="navbar">
     <div class ="navbar__logo">
-      <i class="fas fa-child"></i>
+      <i class="far fa-grin"></i>
       <a href="">PORTFOLIO</a>
     </div>
     
     <ul class ="navbar__menu">
-      <li><a href="">ABOUT</a></li>
-      <li><a href="">PROJECT</a></li>
-      <li><a href="">CONTACT</a></li>
+      <li class="menu-about" id="menu-about" style= "z-index: 2;"><a href="#about">ABOUT</a></li>
+      <li class="menu-project" id="menu-project"style= "z-index: 2;"><a href="">PROJECT</a></li>
+      <li class="menu-contact" id="menu-contact"style= "z-index: 2;"><a href="">CONTACT</a></li>
     </ul>
 
     <!-- <ul class = "navbar__icons">
@@ -36,5 +37,79 @@
     <i class="fas fa-bars"></i>
     </a>
   </nav>
+  <div class="all-content" id="home" width= "100vw" height= "100vh">
+    <div class="content">
+      <div class="home">
+        <h1><span id="dynamic" class="text" style="z-index: 3;"></span><span class="cursor"></span></h1>
+        <br>
+        <div id="circle"style="border-radius: 50%; height: 900px; width: 900px; background-color: #6B7AFF;
+        position: relative;
+        top: 50px;
+        left: -110px;"></div> 
+        <!-- <div id="square" style="height: 950px; width: 400px; background-color:#ffd22e8e;
+        position: fixed;
+        top: 50px;
+        right:50px;"></div> -->
+        <!-- </style>
+        <img class="face" src="face.png">
+        <img class="face1" src="face1.jpeg">
+        <img class="face2" src="face2.jpeg">  -->
+        <a href="#"onclick="location.href='about.html'"><img class="go" id="go" src="go.png" a herf></a>
+        <script src="script/goScroll.js"></script>
+      </div>
+    </div>
+    <div class="content2" id="content2">
+      <div class="about" id="about">
+          <h2>ABOUT</h2>
+          <div class="profile" >
+            <div class="profile-content" id="profile-content" style="height: 950px; width: 400px; background-color:#ffd22e8e;
+            position: relative;
+            z-index: 1;"></div>
+          <img src="face.png" alt="profile" style="position: relative; width:350px; height: 350px; left:  -1600px; bottom: 100px; top:120px; z-index: 2;">
+  </div>
+  <table class="tbl" style="position: relative; z-index: 3; padding-top: 200px; padding-bottom:60px;  padding-right: 450px;">
+    <caption>about</caption>
+    <thead>
+      <tr>
+        <th>긍정적, 끈기, 섬세한 <br>
+          개발자. 이유림</th>
+        <th>1995.01.17<br>
+          전화 82+10.2271.1070<br>
+          이메일 ylee981352@gmail.com<br>
+          주소 경기도 안산시</th>
+        <th><b>일</b><br>
+          창업 스마트스토어 운영 (Right There) 2020.07 - 2021.12</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th></th>
+        <td><b>학력</b><br>
+          상명대학교 패션디자인과<br>
+          2013-2018 졸업<br>
+          <br>
+          광덕고등학교 <br>
+          2010-2012 졸업</td>
+        <td><b>수상</b><br>
+          창업경진대회<br>
+          SK 창업경진대회 / 창의상 수상 / 2016.12</td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><b>기술</b><br>
+          javascript <br>
+          HTML / CSS<br>
+          react</td>
+        <td><b>경험</b><br>
+          프로그래밍<br>
+          개인 프로젝트 (웹페이지 및 포트폴리오 사이트 제작 / 2021.07 - 2021.12<br>
+          마케팅<br>
+          SNS 마케팅 (인스타그램)/ Right There / 2020.06 - 2021.06<br>
+          동아리<br>
+          창업 동아리 Weco(위코)  / 2016.09 - 2016.12</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 </body>
 </html> 

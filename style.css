@@ -1,7 +1,8 @@
+
 :root {
   --text-color:#464242;
-  --background-color:#D7D6D6;
-  --accnet-color:#F4DA80;
+  --background-color:#fff8ed;
+  --accnet-color:#6B7AFF;
 }
 
 * {
@@ -9,13 +10,13 @@
 }
 
 body {
-  margin: 0;
-  font-family: 'lato';
+  margin: 0px;
+  font-family: 'GmarketSansBold';
 }
 
 a {
   text-decoration: none;
-  color: #464242;
+  color: #6B7AFF;
 }
 
 .navbar {
@@ -23,16 +24,18 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 8px 12px;
-  background-color: #D7D6D6;
+  background-color: #FFF8ED;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar__logo {
   font-size: 24px;
-  color: #464242;
+  color: #6B7AFF;
 }
 
 .navbar__logo i {
-  color: #464242;
+  color: #6B7AFF;
 }
 
 .navbar__menu {
@@ -46,29 +49,205 @@ a {
 }
 
 .navbar__menu li:hover {
- background-color: #F4DA80;
+ background-color: #ffd53dd2;
  border-radius: 4px;
 }
 
-.navbar__icons {
-  list-style: none;
-  color: #464242;
-  display: flex;
-  padding-left: 0%;
-}
-
-.navbar__icons li {
-  padding: 8px 12px;
-}
 
 .navbar__toggleBtn {
   display: none;
   position: absolute;
   right: 32px;
   font-size: 24px;
-  color:#464242;
+  color:#6B7AFF;
 }
 
+.all-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #FFF8ED;
+}
+.content {
+  background-color: #FFF8ED;
+  position: static;
+  width: 100%;
+  margin-top: 30px;
+  height: 900px;
+  /* padding-top: 150px;
+    padding-bottom: 400px;
+    margin-top: 30px; */
+}
+
+.content2 {
+  background-color: #FFF8ED;
+}
+.home {
+  margin-top: 140px;
+  position: relative;
+  z-index: 0;
+}
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.home h1 {
+  font-family: 'krona one';
+  text-align: left;
+  left: 50;
+  right: 50;
+  font-size: 49pt;
+  line-height: 1.15em;
+  letter-spacing: -0.05em;
+  color:rgb(40, 38, 38);
+}
+
+#dynamic{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  letter-spacing: 10px;
+}
+.cursor {
+  animation:blink 0.5s infinite;
+  font-family: 'Krona One';
+  font-size: 7.5rem;
+}
+@keyframes blink{
+  to{
+      opacity: 0;
+  }
+}
+.circle {
+  width: 900px;
+  height: 900px;
+  top: 500px;
+  left: -230px;
+  position:fixed;
+  border-radius: 50%;
+  background: #6B7AFF;
+  background-attachment:fixed;
+}
+/* .face {
+  display: inline;
+  position: absolute;
+  top: 120px;
+  width: 200px;
+  left: 80px;
+  right: 50;
+  top: 100px;
+  margin: 0 auto;
+  z-index: 2;
+} */
+/* .face1 {
+  display: inline;
+  position: absolute;
+  top: 120px;
+  width: 400px;
+  left: 50px;
+  right: 50;
+  top: 160px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.face2 {
+  display: inline;
+  position: absolute;
+  top: 120px;
+  width: 600px;
+  left: 300px;
+  right: 50;
+  top: 50px;
+  margin: 0 auto;
+  z-index: 0;
+} */
+.go {
+  display: inline;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 80px;
+  font-family: "GmarketSans";
+  text-align: center;
+  margin: 0 auto;
+  top: 850px;
+  bottom: 80px;
+}
+.about  {
+  margin: 200px 200px;
+}
+.about h2 {
+  font-family: "GmarketSansBold";
+  font-size: 30pt;
+  color:#464242;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.tbl{
+  width: 1000px;
+  border-collapse: collapse;
+  z-index: 2;
+  
+}
+.tbl caption{
+  display: none;
+}
+.tbl th,
+.tbl td {
+  font-family: "GmarketSansLight";
+  border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444;
+    padding: 10px;
+    margin-top: 20px;
+    
+  }
+.tbl th,
+.tbl td{
+  text-align: right;
+  margin-right: 70px;
+  
+}
+.tbl th:first-child, td:first-child {
+  border-left: none;
+  
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffd53dd3;
+  border-radius: 50%;
+  padding: 300px 700px 200px;
+  margin-left: 50px;
+  width: 250px;
+  height: 350px;
+  z-index: 1;
+}
+.profile-content img {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  /* margin: -70px; */
+   /* padding-right: 100px; */
+  /* margin-left: 5px; 
+  margin-top: -50px;
+  margin-bottom: 30px;  */
+  /* 박스 쉐도우 만들기 */
+}
 @media screen and (max-width: 768px){
   .navbar {
     flex-direction: column;
