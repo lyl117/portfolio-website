@@ -26,6 +26,7 @@
     <ul class ="navbar__menu">
       <li class="menu-about" id="menu-about" style= "z-index: 2;"><a href="#about">ABOUT</a></li>
       <li class="menu-project" id="menu-project"style= "z-index: 2;"><a href="">PROJECT</a></li>
+      <li class="menu-cv" id="menu-cv"style= "z-index: 2;"><a href="">CV</a></li>
       <li class="menu-contact" id="menu-contact"style= "z-index: 2;"><a href="">CONTACT</a></li>
     </ul>
 
@@ -54,7 +55,7 @@
         <img class="face" src="face.png">
         <img class="face1" src="face1.jpeg">
         <img class="face2" src="face2.jpeg">  -->
-        <a href="#"onclick="location.href='about.html'"><img class="go" id="go" src="go.png" a herf></a>
+        <a href="#"onclick="location.href='about.html'"><img class="go" id="go" src="go.png" a name= "about"></a>
         <script src="script/goScroll.js"></script>
       </div>
     </div>
@@ -62,18 +63,37 @@
       <div class="about" id="about">
           <h2>ABOUT</h2>
           <div class="profile" >
-            <div class="profile-content" id="profile-content" style="height: 950px; width: 400px; background-color:#ffd22e8e;
+            <div class="profile-content" id="profile-content" style="height: 1000px; width: 400px; background-color:#ffd22e8e;position: relative; z-index: 2; display: inline-block"></div>
+            <div class="circle1" id="circle1" style="border-radius: 50%; height: 600px; width: 600px; background-color: #F4AC78;
             position: relative;
-            z-index: 1;"></div>
-          <img src="face.png" alt="profile" style="position: relative; width:350px; height: 350px; left:  -1600px; bottom: 100px; top:120px; z-index: 2;">
+            top: 1350px;
+            right: 400px;
+            z-index: 2;
+            display: block"></div> 
+          <img src="face.png" alt="profile" style="position: relative; width:350px; height: 350px; left:  -2600px; bottom: 200px; top:200px; border-radius: 50%; z-index: 3;">
   </div>
-  <table class="tbl" style="position: relative; z-index: 3; padding-top: 200px; padding-bottom:60px;  padding-right: 450px;">
+  <table 
+  class="tbl" style="font-family: GmarketSanslight; position: absolute; left: 750px; right: 500x;z-index: 4;top: 1600px; bottom:70px; text-align: left; vertical-align: middle;">
+<style>
+  .keyword{font-family: Reptile; font-size: 130px; margin-top: 150px; border-bottom: -1500px; border-left:50px; border-right: 1500px; z-index: 6;}
+  .english{font-family: GmarketSanslight; position: relative; right: 1000px; left: 200px; top: 50px; bottom: -1500px;  z-index: 5;}
+</style>
+<p class="keyword">Positive.delicate.patience</p>
+<p class="english">Hi<br>My name is YurimLee. and I am a frontend developer.<br>
+  I graduated from sangmung university at choenan in 2018. my major is fashion design.<br>
+  but the design dosen’t suit my taste. so i tryed to looking for my taste.<br>
+  as a result i decided to become a developer. curently I having experience personal project about programming<br>
+  <br>
+  <br>
+  I ‘m interested  cooking, photography and art. When I'm not studying programming, <br>
+  I'm spending time watching YouTube videos and cooking awesome meals.</th></p>
     <caption>about</caption>
     <thead>
       <tr>
-        <th>긍정적, 끈기, 섬세한 <br>
-          개발자. 이유림</th>
-        <th>1995.01.17<br>
+        <th><b>긍정적,끈기, 섬세한 <br>
+          개발자. 이유림</b></th>
+        <th><b>프로필</b><br>
+          1995.01.17<br>
           전화 82+10.2271.1070<br>
           이메일 ylee981352@gmail.com<br>
           주소 경기도 안산시</th>
@@ -108,6 +128,19 @@
           동아리<br>
           창업 동아리 Weco(위코)  / 2016.09 - 2016.12</td>
       </tr>
+      <!-- <tr>
+        <th>Hi <br>
+          My name is YurimLee. and I am a frontend developer.<br>
+          I graduated from sangmung university at choenan in 2018. my major is fashion design.<br>
+          but the design dosen’t suit my taste. so i tryed to looking for my taste.<br>
+          as a result i decided to become a developer. curently I having experience personal project about programming</th>
+          <br>
+          <br>
+        <th>
+          I ‘m interested  cooking, photography and art. When I'm not studying programming, <br>
+          I'm spending time watching YouTube videos and cooking awesome meals.</th>
+      </tr> -->
+    </tbody>
     </tbody>
   </table>
   </div>

@@ -190,32 +190,54 @@ a {
 }
 .tbl{
   width: 1000px;
-  border-collapse: collapse;
   z-index: 2;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  }
   
-}
 .tbl caption{
   display: none;
+ 
 }
 .tbl th,
 .tbl td {
   font-family: "GmarketSansLight";
-  border-bottom: 1px solid #444444;
-    border-left: 1px solid #444444;
     padding: 10px;
     margin-top: 20px;
-    
+
   }
 .tbl th,
 .tbl td{
-  text-align: right;
+  text-align: left;
   margin-right: 70px;
+  vertical-align: top;
   
 }
 .tbl th:first-child, td:first-child {
   border-left: none;
-  
 }
+.circle1 {
+  display: block;
+  flex-direction: column;
+  background-color: #F4AC78;
+  border-radius: 50%;
+  padding: 100px 300px 150px;
+  margin-left: -100px;
+  margin-right: 500px;
+  top: 800px;
+  bottom: 450px;
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+}
+.keyword {
+  font-family: "Reptile;"
+}
+.english {
+  left: 500px;
+  top: 100px;
+}
+
 .profile {
   display: flex;
   flex-direction: row;
@@ -229,8 +251,9 @@ a {
   flex-direction: column;
   background-color: #ffd53dd3;
   border-radius: 50%;
-  padding: 300px 700px 200px;
-  margin-left: 50px;
+  padding: 100px 850px 250px;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 250px;
   height: 350px;
   z-index: 1;
