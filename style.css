@@ -271,6 +271,173 @@ a {
   margin-bottom: 30px;  */
   /* 박스 쉐도우 만들기 */
 }
+.profile-content h3 {
+  font-family: GmarketSansMedium;
+  font-size: 20pt;
+  color: #464242;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-content h4 {
+  font-family: GmarketSansbold;
+  font-size: 20pt;
+  color: #4a86ff;
+  text-align: center;
+  margin-top: 2.5px;
+  margin-bottom: 30px;
+}
+
+.profile-content p {
+  font-family: NotoSans;
+  font-weight: 400;
+  font-size: 15pt;
+  color: #053768;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.profile-content p:after {
+  content: ""; position: absolute; width: 100%; height: 1px; background-color: #053768;
+  opacity: 0.4;
+  display: block;
+  margin-top: 15px;
+}
+
+.number {
+  opacity: 0.6;
+  font-weight: 300;
+
+}
+
+.profile-content2 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 60px 40px;
+}
+
+.profile-content2 h3 {
+  font-family: GmarketSansBold;
+  font-size: 17pt;
+  color: #053768;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-content2 p {
+  font-family: NotoSans;
+  font-weight: 600;
+  font-size: 14pt;
+  color: #053768;
+  margin-top: 5px;
+}
+
+
+.goal img {
+  width: 250px;
+  height: 200px;
+  margin: 20px;
+}
+
+.goal h2 {
+  font-family: GmarketSansBold;
+  font-size: 30pt;
+  color: #4a86ff;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.goal-boxes1{
+  position: relative;
+  width: 960px;
+  height: 400px;
+  margin: 100px auto 200px;
+  overflow: hidden;
+}
+
+.goal-boxes {
+  position: absolute;
+  left: 0; top: 0;
+  transition: left 0.5s ease-out;
+}
+
+.goal-boxes li:not(:last-child){
+  margin-right: 30px;
+}
+.goal-box{ 
+  float: left;
+  border: 1px solid #4a86ff;
+  background-color: #eaeaea;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+}
+
+
+.goal-box h3{
+  text-align: center;
+  font-family: GmarketSansBold;
+  color: #fff;
+  background-color: #4a86ff;
+  font-size: 20pt;
+  padding: 5px 10px;
+}
+
+.goal-box p {
+  font-family: "NotoSans";
+  font-size: 13pt;
+  font-weight: 500;
+  color: #053768;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+}
+
+
+.controls {
+  font-size: 30px;
+  font-family: GmarketSansMedium;
+  position: absolute;
+  left:0; right:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 530px;
+  margin: 0 180px;
+}
+
+.controls span{
+  font-size: 25pt;
+  color: #4a86ff;
+  padding: 3px 17px 0px;
+}
+
+.contact {
+  background-color: #383838;
+  left: o; width: 100%; bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 200px;
+}
+
+.contact-logo img {
+  width: 200px;
+  margin: 30px 0px 30px;
+}
+
+.contact-content {
+  display: inline-block;
+}
+
+.contact-content img {
+  width: 45px;
+  margin: 30px 15px 30px;
+  color: #fff;
+}
+
 @media screen and (max-width: 768px){
   .navbar {
     flex-direction: column;
@@ -304,4 +471,34 @@ a {
   .navbar__icons.active {
     display: flex;
   }
+}
+#back-to-top{
+  font-family: "GmarketSansMedium";
+  font-size: 1em;
+  position: fixed;
+  bottom: 11.7em;
+  right: 2.5em;
+  background-color: #eaeaea;
+  box-shadow: 0 0 0.4em 0 rgba(0, 0, 0, .25);
+  color: #383838;
+  border-radius: 5px;
+  padding: 0.8em;
+  text-transform: uppercase;
+  transition: all .3s;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  opacity: 0;
+
+}
+
+#back-to-top:hover{
+  font-family: "GmarketSansbold";
+  background-color: #fff;
+  color: #4a86ff;
+  padding: 0.8em 2.5em;
+}
+
+#back-to-top.visible{
+  opacity: 1;
 }
