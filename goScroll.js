@@ -5,17 +5,17 @@ let goBtn = document.getElementById("go");
 
 goBtn.addEventListener('click',function(ev){
     ev.preventDefault();
-    document.getElementById('go').scrollIntoView({behavior: "smooth", block: "start"})
+    document.getElementById('about').scrollIntoView({behavior: "smooth", block: "start"})
 });
 aBtn.addEventListener('click',function(ev){
     ev.preventDefault();
-    document.getElementById('ABOUT').scrollIntoView({behavior: "smooth", block: "start"})
+    document.getElementById('about').scrollIntoView({behavior: "smooth", block: "start"})
 });
 pBtn.addEventListener('click',function(ev){
     ev.preventDefault();
-    document.getElementById('PROJECT').scrollIntoView({behavior: "smooth", block: "start"})
+    document.getElementById('goal').scrollIntoView({behavior: "smooth", block: "start"})
 });
 cBtn.addEventListener('click',function(ev){
     ev.preventDefault();
-    document.getElementById('CONTACT').scrollIntoView({behavior: "smooth", block: "start"})
+    document.getElementById('contact').scrollIntoView({behavior: "smooth", block: "start"})
 });
