@@ -13,7 +13,7 @@ aBtn.addEventListener('click',function(ev){
 });
 pBtn.addEventListener('click',function(ev){
     ev.preventDefault();
-    document.getElementById('goal').scrollIntoView({behavior: "smooth", block: "start"})
+    document.getElementById('project').scrollIntoView({behavior: "smooth", block: "start"})
 });
 cBtn.addEventListener('click',function(ev){
     ev.preventDefault();

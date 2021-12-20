@@ -207,51 +207,63 @@ a {
 }
 
 
-.goal img {
+.project img {
   width: 250px;
   height: 200px;
   margin: 20px;
 }
 
-.goal h2 {
+.project h2 {
   font-family: GmarketSansBold;
   font-size: 30pt;
   color: #6B7AFF;
   align-items: center;
   text-align: center;
   margin-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 900px;
 }
 
-.goal-boxes1{
+.project-boxes1  {
   position: relative;
   width: 960px;
   height: 400px;
   margin: 1900px auto 1500px;
   overflow: visible;
-  float: center;
+  
 }
 
-.goal-boxes {
+.project-boxes {
   position: relative;
   left: 0; top: 0;
   transition: left 0.5s ease-out;
+  
 }
 
-.goal-boxes li:not(:last-child){
-  margin-right: 30px;
+.project-boxes li:not(:last-child){
+  margin-right: 0px;
+  
 }
-.goal-box{ 
-  float: right;
+.project-box li{ 
+  float: left;
   border: 1px solid #6B7AFF;
   background-color: #eaeaea;
   text-align: center;
   align-items: center;
   width: 300px;
   height: 400px;
+  margin: 0 auto;
+  top: 300px;
+  bottom: 1500px;
+}
+.project-boxe:after {
+  display: block;
+  content: '';
+  clear: both;
 }
 
 
-.goal-box h3{
+.project-box h3{
   text-align: center;
   font-family: GmarketSansBold;
   color: #fff;
@@ -260,7 +272,7 @@ a {
   padding: 5px 10px;
 }
 
-.goal-box p {
+.project-box p {
   font-family: "NotoSans";
   font-size: 13pt;
   font-weight: 500;
@@ -289,7 +301,7 @@ a {
 }
 
 .contact {
-  background-color: #383838;
+  background-color: #f9e5c6;
   left: o; width: 100%; bottom: 0;
   display: flex;
   flex-direction: row;
