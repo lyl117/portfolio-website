@@ -1,6 +1,6 @@
-let     slides = document.querySelector(".goal-boxes"),
+let     slides = document.querySelector(".project-boxes"),
         // `slides`는 left값을 바꿔줄 용도.
-        slide = document.querySelectorAll(".goal-boxes li"),
+        slide = document.querySelectorAll(".project-boxes li"),
         currentIdx = 0,
         // 버튼을 눌렀을 때 순서를 만들어줘야 함.
         slideCount = slide.length,

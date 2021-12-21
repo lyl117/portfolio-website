@@ -237,7 +237,7 @@ a {
   position: relative;
   left: 0; top: 0;
   transition: left 0.5s ease-out;
-  
+ 
 }
 
 .project-boxes li:not(:last-child){
@@ -253,8 +253,9 @@ a {
   width: 300px;
   height: 400px;
   margin: 0 auto;
-  top: 300px;
-  bottom: 1500px;
+  margin-top: -2600px;
+  margin-bottom: 5000px;
+ 
 }
 .project-boxe:after {
   display: block;
@@ -290,7 +291,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  bottom: 530px;
+  bottom: -2430px;
   margin: 0 180px;
 }
 
