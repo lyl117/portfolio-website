@@ -16,4 +16,4 @@
 #### - CONTACT는 깃헙,인스타그램, 이메일로 연결시킴.
 
 ## 🚩와이어프레임 
-
+![와이어프레임](https://user-images.githubusercontent.com/87302599/147110656-7b440869-7055-4911-9d21-f8572fc8fce7.png)
