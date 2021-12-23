@@ -206,14 +206,7 @@ a {
   top: 100px;
 }
 
-
-.project img {
-  width: 250px;
-  height: 200px;
-  margin: 20px;
-}
-
-.project h2 {
+.section h2 {
   font-family: GmarketSansBold;
   font-size: 30pt;
   color: #6B7AFF;
@@ -223,86 +216,51 @@ a {
   padding-top: 100px;
   padding-bottom: 900px;
 }
-
-.project-boxes1  {
-  position: relative;
-  width: 960px;
-  height: 400px;
-  margin: 1900px auto 1500px;
-  overflow: visible;
+.section input [id="slide"]{
+  display: none;
+}
+.section .slidewrap {
+  max-width: 800px;
+  margin: 30px 15px 30px;
+  overflow: hidden;
   
 }
-
-.project-boxes {
-  position: relative;
-  left: 0; top: 0;
-  transition: left 0.5s ease-out;
- 
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
 }
-
-.project-boxes li:not(:last-child){
-  margin-right: 0px;
-  
+.section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all .5s;
 }
-.project-box li{ 
-  float: left;
-  border: 1px solid #6B7AFF;
-  background-color: #eaeaea;
-  text-align: center;
-  align-items: center;
-  width: 300px;
-  height: 400px;
-  margin: 0 auto;
-  margin-top: -2600px;
-  margin-bottom: 5000px;
- 
-}
-.project-boxe:after {
+.section .slidelist > li > a {
   display: block;
-  content: '';
-  clear: both;
+  position: relative;
 }
-
-
-.project-box h3{
-  text-align: center;
-  font-family: GmarketSansBold;
-  color: #fff;
-  background-color: #6B7AFF;
-  font-size: 20pt;
-  padding: 5px 10px;
+.section .slidelist > li > a img {
+  width: 100%;
 }
-
-.project-box p {
-  font-family: "NotoSans";
-  font-size: 13pt;
-  font-weight: 500;
-  color: #6B7AFF;
-  margin-bottom: 30px;
-  line-height: 1.2em;
+.section .slidelist label {
+  position: Absolute ;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding:50px;
+  cursor: pointer;
 }
-
-
-.controls {
-  font-size: 30px;
-  font-family: GmarketSansMedium;
-  position: absolute;
-  left:0; right:0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  bottom: -2430px;
-  margin: 0 180px;
+.section .slidelist .left {
+  left:30px;
+  background: url(allow01.svg)center center / 100% no-repeat
 }
-
-.controls span{
-  font-size: 25pt;
-  color: #6B7AFF;
-  padding: 3px 17px 0px;
+.section .slidelist .right {
+  right:30px;
+  background: url(allow02.svg)center center 
 }
 
 .contact {
-  background-color: #f9e5c6;
+  background-color: #f2e3c2;
   left: o; width: 100%; bottom: 0;
   display: flex;
   flex-direction: row;
@@ -310,9 +268,12 @@ a {
   padding: 20px 200px;
 }
 
-.contact-logo img {
-  width: 200px;
-  margin: 30px 0px 30px;
+.contact h2 {
+  color:#6B7AFF;
+  text-align: center;
+  right: 500px;
+  left: 500px;
+  margin: 50px 20px 50px;
 }
 
 .contact-content {
@@ -367,7 +328,7 @@ a {
   right: 2.5em;
   background-color: #eaeaea;
   box-shadow: 0 0 0.4em 0 rgba(0, 0, 0, .25);
-  color: #383838;
+  color: #4a86ff;
   border-radius: 5px;
   padding: 0.8em;
   text-transform: uppercase;
