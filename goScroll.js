@@ -1,11 +1,15 @@
-let goBtn = document.getElementById("go");
+
+
+
+let = 0;
+    gBtn = document.getElementById("go");
     aBtn = document.getElementById("menu-about"),
     pBtn = document.getElementById("menu-project"),
     cBtn = document.getElementById("menu-contact");
 
-goBtn.addEventListener('click',function(ev){
+gBtn.addEventListener('click',function(ev){
     ev.preventDefault();
-    document.getElementById('about').scrollIntoView({behavior: "smooth", block: "start"})
+    document.getElementById('go').scrollIntoView({behavior: "smooth", block: "start"})
 });
 aBtn.addEventListener('click',function(ev){
     ev.preventDefault();
