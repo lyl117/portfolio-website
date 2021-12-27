@@ -53,7 +53,7 @@
     <div class="content2" id="content2">
       <div class="about" id="about">
          <br> <h2>ABOUT</h2>
-          <div class="profile" >
+          <div class="profile" style="position: relative; top:50px; left:0px;">
             <div class="profile-content" id="profile-content" style="height: 700px; width: 300px; border-radius:50%; position: relative; z-index: 2; display: inline-block"></div>
             <div class="circle1" id="circle1" style="border-radius: 50%; height: 600px; width: 600px; background-color: #F4AC78;
             position: relative;
@@ -62,7 +62,7 @@
             z-index: 2;
             display: block"></div> 
             <img src="qq.png" alt="stroke" style= "position: relative; width:500px; height: 500px; left:-50px; bottom: 20px; top:-1300px; z-index: 5;">
-          <img src="face01.jpeg" alt="profile" style="position: relative; width:400px; height: 450px; left:-500px; bottom: 70px; top:-1325px; border-radius: 50%;  z-index: 5;">
+          <img src="face01.jpeg" alt="profile" style="position: absolute; width:400px; height: 450px; left:0px; bottom: 70px; top:30px; border-radius: 50%;  z-index: 5;">
   </div>
   <table 
   class="tbl" style="font-family: GmarketSanslight; position: absolute; left: 650px; right: 500x;z-index: 4;top: 1500px; bottom:150px; text-align: left; vertical-align: middle;">
@@ -149,7 +149,9 @@
     .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
     .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
     .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
-  
+    .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+    .section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
+    .section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}
     /* INPUT이 체크되면 변화값이 LEFT,RIGHT에 전달되는 스타일 */
     .section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .left {left:30px;transition:all .35s ease .5s;} /* 1번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
     .section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .right {right:30px;transition:all .35s ease .5s;} /* 1번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
@@ -157,6 +159,12 @@
     .section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .right {right:30px;transition:all .35s ease .5s;} /* 2번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
     .section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .left {left:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
     .section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .right {right:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+    .section input[id="slide04"]:checked ~ .slidewrap li:nth-child(4) .left {left:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+    .section input[id="slide04"]:checked ~ .slidewrap li:nth-child(4) .right {right:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+    .section input[id="slide05"]:checked ~ .slidewrap li:nth-child(5) .left {left:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+    .section input[id="slide05"]:checked ~ .slidewrap li:nth-child(5) .right {right:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+    .section input[id="slide06"]:checked ~ .slidewrap li:nth-child(6) .left {left:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+    .section input[id="slide06"]:checked ~ .slidewrap li:nth-child(6) .right {right:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
     </style>
   </head>
   <body>
@@ -164,36 +172,63 @@
   <input type ="radio" name="slide" id="slide01" checked>
   <input type ="radio" name="slide" id="slide02">
   <input type ="radio" name="slide" id="slide03">
-  
-  <div class="slidewrap">
+  <input type ="radio" name="slide" id="slide04">
+  <input type ="radio" name="slide" id="slide05">
+  <input type ="radio" name="slide" id="slide06">
+
+  <div class="slidewrap" style="position: relative; top: -800px; bottom: 1000px; left:0px;">
     <ul class="slidelist">
       <li>
         <a>
-          <a href=https://www.notion.so/62040c5ae9114bb1bdebf8a8ab1eadae>
-          <label for="slide03" class="left"></label>
-          <img src="Group 1.png">
+          <a href=https://www.notion.so/7187ab306b604440b03a5059e42779f4>
+          <label for="slide06" class="left"></label>
+          <img src="b.png">
             <label for="slide02" class="right"></label>
         </a>
       </li>
       <li>
         <a>
-          <a href=https://www.notion.so/4e871e9cd7954a6aae120598579a2eb1>
+          <a href=https://www.notion.so/73b7df50b334433e9aae8da474c1aa0f>
           <label for="slide01" class="left"></label>
-          <img src="Group2.png">
+          <img src="a.png">
             <label for="slide03" class="right"></label>
         </a>
       </li>
       <li>
         <a>
+          <a href="https://www.notion.so/c4b81c6d14e74cd5afa603b280d66db1">
           <label for="slide02" class="left"></label>
+          <img src="rebeam.png">
+            <label for="slide04" class="right"></label>
+        </a>
+      </li>
+      <li>
+        <a>
+          <a href="https://www.notion.so/5-ae2b2140fc7245688eea506052dc849d">
+          <label for="slide03" class="left"></label>
+          <img src="r.jpeg">
+            <label for="slide05" class="right"></label>
+        </a>
+      </li>
+      <li>
+        <a>
+          <a href="https://www.notion.so/62040c5ae9114bb1bdebf8a8ab1eadae">
+          <label for="slide04" class="left"></label>
           <img src="Group 1.png">
+            <label for="slide06" class="right"></label>
+        </a>
+      </li>
+      <li>
+        <a>
+          <a href="https://www.notion.so/4e871e9cd7954a6aae120598579a2eb1">
+          <label for="slide05" class="left"></label>
+          <img src="Group2.png">
             <label for="slide01" class="right"></label>
         </a>
       </li>
     </ul>  
   </div>
 </div>
-
 
 <footer class="contact" id="contact">
     <div class="contact-content">
@@ -206,8 +241,5 @@
     </div>
     <a id="back-to-top" href="#">Top</a>
 </footer>
-<!-- <script src = "script/typing.js"></script>
-<script src = "script/backToTop.js"></script>
-<script src = "script/slide.js"></script> -->
 </body>
 </html> 
