@@ -1,0 +1,369 @@
+
+:root {
+  --text-color:#464242;
+  --background-color:#fff8ed;
+  --accnet-color:#6B7AFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'GmarketSansBold';
+}
+
+a {
+  text-decoration: none;
+  color: #6B7AFF;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #FFF8ED;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  color: #6B7AFF;
+}
+
+.navbar__logo i {
+  color: #6B7AFF;
+}
+
+.navbar__menu {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+ background-color: #ffd53dd2;
+ border-radius: 4px;
+}
+
+
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color:#6B7AFF;
+}
+
+.all-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #FFF8ED;
+}
+.content {
+  background-color: #FFF8ED;
+  position: static;
+  width: 100%;
+  margin-top: 30px;
+  height: 900px;
+  /* padding-top: 150px;
+    padding-bottom: 400px;
+    margin-top: 30px; */
+}
+
+.content2 {
+  background-color: #FFF8ED;
+}
+.home {
+  margin-top: 140px;
+  position: relative;
+  z-index: 0;
+}
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.home h1 {
+  font-family: 'krona one';
+  text-align: left;
+  left: 50;
+  right: 50;
+  font-size: 49pt;
+  line-height: 1.15em;
+  letter-spacing: -0.05em;
+  color:rgb(40, 38, 38);
+}
+
+#dynamic{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  letter-spacing: 10px;
+}
+.cursor {
+  animation:blink 0.5s infinite;
+  font-family: 'Krona One';
+  font-size: 7.5rem;
+}
+@keyframes blink{
+  to{
+      opacity: 0;
+  }
+}
+.circle {
+  width: 900px;
+  height: 900px;
+  top: 50px;
+  left: 300px;
+  position:fixed;
+  border-radius: 50%;
+  background: #6B7AFF;
+  background-attachment:fixed;
+}
+
+.go {
+  display: inline;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 80px;
+  font-family: "GmarketSans";
+  text-align: center;
+  margin: 0 auto;
+  top: 750px;
+  bottom: 50px;
+}
+.about  {
+  margin: 200px 200px;
+}
+.about h2 {
+  font-family: "GmarketSansBold";
+  font-size: 30pt;
+  color:#6B7AFF;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.tbl{
+  width: 1000px;
+  z-index: 2;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  }
+  
+.tbl caption{
+  display: none;
+ 
+}
+.tbl th,
+.tbl td {
+  font-family: "GmarketSansLight";
+    padding: 10px;
+    margin-top: 20px;
+
+  }
+.tbl th,
+.tbl td{
+  text-align: left;
+  margin-right: 70px;
+  vertical-align: top;
+  
+}
+.tbl th:first-child, td:first-child {
+  border-left: none;
+}
+.circle1 {
+  display: block;
+  flex-direction: column;
+  background-color: #F4AC78;
+  border-radius: 50%;
+  padding: 100px 300px 150px;
+  margin-left: -500px;
+  margin-right: 500px;
+  top: 1800px;
+  bottom: 450px;
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+}
+.keyword {
+  font-family: "Reptile;"
+}
+.english {
+  left: 500px;
+  top: 100px;
+}
+
+.section h2 {
+  font-family: GmarketSansBold;
+  font-size: 30pt;
+  color: #6B7AFF;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 900px;
+}
+.section input [id="slide"]{
+  display: none;
+}
+.section .slidewrap {
+  max-width: 800px;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  padding: -300px 0px 700px;
+}
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+}
+.section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all .5s;
+}
+.section .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+.section .slidelist > li > a img {
+  width: 100%;
+}
+.section .slidelist label {
+  /* position: relative ;
+  z-index: 10;
+  top: 100%;
+  left: -50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  padding:-100px;
+  cursor: pointer;
+} */
+position: relative;
+ content:"";
+ display: block;
+ width:10px;
+ height:10px;
+ /* border-top:4px solid #333; */
+ /* border-right:4px solid #333; */
+ -webkit-transform: rotate(45deg);
+ transform: rotate(45deg);
+ position: absolute;
+ right:10px;
+ top:50%;
+ margin-top:-7px;
+}
+.section .slidelist .left {
+  left:30px;
+  background: url(allow01.svg)center center/ 100% no-repeat
+}
+.section .slidelist .right {
+  right:30px;
+  background: url(allow02.svg)center center
+}
+
+.contact {
+  background-color: #f2e3c2;
+  left: o; width: 100%; bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 200px;
+}
+
+.contact h2 {
+  color:#6B7AFF;
+  text-align: center;
+  right: 500px;
+  left: 500px;
+  margin: 50px 20px 50px;
+}
+
+.contact-content {
+  display: inline-block;
+}
+
+.contact-content img {
+  width: 45px;
+  margin: 30px 15px 30px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar__menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__menu a {
+    display: block;
+  }
+
+
+  .navbar__icons{
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
+#back-to-top{
+  font-family: "GmarketSansMedium";
+  font-size: 1em;
+  position: fixed;
+  bottom: 11.7em;
+  right: 2.5em;
+  background-color: #eaeaea;
+  box-shadow: 0 0 0.4em 0 rgba(0, 0, 0, .25);
+  color: #4a86ff;
+  border-radius: 5px;
+  padding: 0.8em;
+  text-transform: uppercase;
+  transition: all .3s;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  opacity: 0;
+
+}
+
+#back-to-top:hover{
+  font-family: "GmarketSansbold";
+  background-color: #fff;
+  color: #4a86ff;
+  padding: 0.8em 2.5em;
+}
+
+#back-to-top.visible{
+  opacity: 1;
+}
