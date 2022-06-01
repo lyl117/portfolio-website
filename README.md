@@ -17,3 +17,6 @@
 
 ## 🚩와이어프레임 
 ![와이어프레임](https://user-images.githubusercontent.com/87302599/147110656-7b440869-7055-4911-9d21-f8572fc8fce7.png)
+
+## 기능 구현
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/87302599/171430127-a33652d8-fd3e-4ce1-8d47-2e41e7f2b470.gif)
